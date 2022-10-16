@@ -73,3 +73,18 @@ Because the contract owner can only add facts to this contract, export and copy 
 deployed the contract. Don’t forget to prepend 0x to the private key.
 
 Putting it all together, along with an instance of ContractService.
+
+# 3. Smart Contract Interaction: Writing to the Smart Contract
+Return to the ContractService class. Create a method which takes a string as an argument (a fact) and adds it to the
+contract. We will send an asynchronous transaction - method.SendTransactionAsync(from, gas, value,
+functionInput) and will not wait to be mined, just get the transaction hash.
+
+In the main function, call the method.
+
+Then, press Start:
+
+A terminal will launch and will contain the transaction hash.
+
+Check the transaction hash in Ropsten Etherscan to confirm if the transaction has succeeded.
+
+Try adding a fact using another private key as an account. Hypothesize on what could happen and test it.
