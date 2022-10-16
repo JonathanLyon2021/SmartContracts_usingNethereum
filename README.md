@@ -88,3 +88,17 @@ A terminal will launch and will contain the transaction hash.
 Check the transaction hash in Ropsten Etherscan to confirm if the transaction has succeeded.
 
 Try adding a fact using another private key as an account. Hypothesize on what could happen and test it.
+
+4. Smart Contract Interaction: Reading from the Smart Contract
+When reading from a Smart Contract, no wallets or private keys are needed.
+In the ContractService class, create a method which gets a fact by a given index and returns a string with the fact.
+Get the method of the contract and then make an asynchronous call with the index as parameter, which will return
+Task<string> and get the result:
+
+Run the program.
+
+Finally, create a method, which gets how many facts are stored in the contract:
+
+Page 16 of 16 https://kingslanduniversity.com
+
+Run the program.
