@@ -26,8 +26,10 @@ Proceed with the installation.
 Open the Visual Studio 2019 Software. Then, create a C# .NET Core Console Application:
 
 Continue to configure your project specifying the name, location, solution name, and framework.
-In this exercises we will use .NET Framework 4.7.2
+In this exercises we will use 
+__.NET Framework 4.7.2__
 
 Then go to Tools -> NuGet Package Manager -> Manager NuGet Packages for Solution:
 
-Navigate to Browse and install the following NuGetPackages:
+Navigate to Browse and install the following NuGetPackages.
+
