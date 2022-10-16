@@ -57,3 +57,19 @@ In order to get a contract instance of an already deployed contract, we will nee
 interface. For exercise’s purpose, deploy a simple contract storing an array of facts through Remix IDE using
 MetaMask Goerli as a provider.
 
+If you do not have Ropsten test ETH, use the faucet: https://faucet.egorfine.com/
+Copy the contract’s ABI by compiling the contract and clicking on the ‘ABI’ button below the Compilation Details.
+You may not be able to copy the ABI directly in Visual Studio because the ABI is a JSON Object.
+You have to escape all string characters (“) by prepending a backslash (\”).
+
+### Hint:
+
+Use the editor’s CTRL + H feature to quickly replace these occurrences. Be careful not to replace the quotes in other
+parts of your program.
+
+Then, deploy the contract using Injected Web3 while taking note of the address, copy those values in your C# code.
+
+Because the contract owner can only add facts to this contract, export and copy the private key of the account that
+deployed the contract. Don’t forget to prepend 0x to the private key.
+
+Putting it all together, along with an instance of ContractService.
