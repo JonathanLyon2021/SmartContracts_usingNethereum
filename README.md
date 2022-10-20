@@ -86,4 +86,4 @@ Run the program.
 Then finally, create a method, which gets how many facts are stored in the contract.
 Run the program again...
   
-Congratulations! You've completed the exercise!
+## Congratulations! You've completed the exercise!
