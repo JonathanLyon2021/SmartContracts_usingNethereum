@@ -26,7 +26,7 @@ Open the Visual Studio 2022 Software. Then, create a C# .NET Core Console Applic
 
 Continue to configure your project specifying the name, location, solution name, and framework.
 In this exercises we will use 
-__.NET Framework 4.7.2__
+      __.NET Framework 4.7.2__
 
 Then go to Tools -> NuGet Package Manager -> Manager NuGet Packages for Solution. <br>
 
@@ -42,6 +42,7 @@ Create 3 read-only private properties for the Web3, the Contract and for an Acco
 Then, create a constructor, which takes 4 parameters: provider of the node, contract address, contract ABI, and a
 private key for an account/wallet. Putting it all together.
 We will need HTTPProvider in order to create our connection to the Ropsten Testnet using Infura.io.
+
 Now, let’s get the necessary Infura.io provider. Go to https://infura.io/ and click [Get started for free]. You may also
 choose to login if you have registered before.
 When you are logged in, select on a project (create one first if you already don’t have a project) and take note of the
