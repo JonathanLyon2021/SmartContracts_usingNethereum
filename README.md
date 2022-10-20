@@ -58,7 +58,7 @@ Copy the contract’s ABI by compiling the contract and clicking on the ‘ABI�
 You may not be able to copy the ABI directly in Visual Studio because the ABI is a JSON Object.
 You have to escape all string characters (“) by prepending a backslash (\”).
 
-#### Hint:
+## Hint:
 
 Use the editor’s CTRL + H feature to quickly replace these occurrences. Be careful not to replace the quotes in other
 parts of your program.
