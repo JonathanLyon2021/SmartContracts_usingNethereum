@@ -34,7 +34,7 @@ Navigate to Browse and install the following NuGetPackages. <br>
 Accept any prompts that will show up. <br>
 After successful installation, you’ll see these packages in the installed tab, along with other dependencies. <br>
 
-# 2. Implementing the Contract
+# 2. Implementing the Smart Contract
 Import the following namespaces in order to use Nethereum’s Web3 libraries.
 
 Inside the Program class, create a class called ContractService, which will be the connection to the Goerli Testnet.
@@ -58,7 +58,7 @@ Copy the contract’s ABI by compiling the contract and clicking on the ‘ABI�
 You may not be able to copy the ABI directly in Visual Studio because the ABI is a JSON Object.
 You have to escape all string characters (“) by prepending a backslash (\”).
 
-### Hint:
+#### Hint:
 
 Use the editor’s CTRL + H feature to quickly replace these occurrences. Be careful not to replace the quotes in other
 parts of your program.
