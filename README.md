@@ -21,7 +21,6 @@ You may find that the setup will prompt you for some miscellaneous plugins. Itâ€
 .NET Desktop Development. As for others, you may select if you fancy them.
 Proceed with the installation.
 
-
 # 1. Setup the Development Environment
 Open the Visual Studio 2022 Software. Then, create a C# .NET Core Console Application.
 
