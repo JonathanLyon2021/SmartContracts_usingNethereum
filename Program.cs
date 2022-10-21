@@ -13,7 +13,11 @@ class Program {
     private static readonly HexBigInteger GAS = new HexBigInteger(4600000);
     
     public ContractService(string provider, string contractAddress, string abi, string privateKey)
-   
+    {
+      this.account = new Account(privateKey, 3);
+      this.web3 = new Web3(account, provider);
+      this.contract = web3.ETH.GetContract(abi, contractAddress);
+    }
   }
 }
 
