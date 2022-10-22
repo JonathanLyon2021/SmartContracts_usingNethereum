@@ -22,6 +22,9 @@ class Program {
   
   static void Main(string[] args)
   {
-    var provider = "Infura node provider goes here!!!!!"
+    var provider = "Infura node provider goes here!!!";
+      var contractAddress = "0xD614a73f2A5e18A74B70F8a1d1c9E6881Fe7d04e, probably be the deployed contract address";
+    var abi = "abi of deployed contract goes here";
+      var privateKey = "Private Key goes here";
 }
 
