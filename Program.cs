@@ -31,6 +31,7 @@ class Program {
   }
   
   static void Main(string[] args)
+    
   {
     var provider = "Infura node provider goes here!!!";
       var contractAddress = "0xD614a73f2A5e18A74B70F8a1d1c9E6881Fe7d04e, probably be the deployed contract address";
@@ -38,5 +39,10 @@ class Program {
       var privateKey = "Private Key goes here";
     
     ContractService contractService = new ContractService(provider, contractAddress, abi, privateKey);
+    
+    var fact = "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
+    System.Console.WriteLine($"Transaction Hash: {contractService.AddFact(fact)}");
+    System.Console.WriteLine($"Press any key to Exit.....");
+    System.Console.ReadLine();  
+  }
 }
-
