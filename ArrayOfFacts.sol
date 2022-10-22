@@ -17,4 +17,8 @@ contract ArrayOfFacts {
     function add(string memory newFact) public onlyOwner {
         facts.push(newFact);
     }
+    
+     function count() public view returns(uint256) {
+        return facts.length;
+    }
 }
