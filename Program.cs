@@ -18,6 +18,16 @@ class Program {
       this.web3 = new Web3(account, provider);
       this.contract = web3.ETH.GetContract(abi, contractAddress);
     }
+  
+    public string AddFact(string fact)
+    {
+      var addFactFunction = contract.GetFunction("add");
+      var txHash = addFactFunction.SendTransactionAsync(account.Address, GAS, new HexBigInteger(0), fact)
+        .ConfigureAwait(false)
+        .GetAwaiter()
+        .GetResult();
+      return txHash;
+    }
   }
   
   static void Main(string[] args)
