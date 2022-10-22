@@ -26,5 +26,7 @@ class Program {
       var contractAddress = "0xD614a73f2A5e18A74B70F8a1d1c9E6881Fe7d04e, probably be the deployed contract address";
     var abi = "abi of deployed contract goes here";
       var privateKey = "Private Key goes here";
+    
+    ContractService contractService = new ContractService(provider, contractAddress, abi, privateKey);
 }
 
