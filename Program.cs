@@ -19,5 +19,9 @@ class Program {
       this.contract = web3.ETH.GetContract(abi, contractAddress);
     }
   }
+  
+  static void Main(string[] args)
+  {
+    var provider = "Infura node provider goes here!!!!!"
 }
 
