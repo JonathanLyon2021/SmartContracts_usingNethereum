@@ -33,7 +33,7 @@ class Program {
   static void Main(string[] args)
     
   {
-    var provider = "Infura node provider goes here!!!";
+    var provider = ""https://goerli.infura.io/v3/08ca1c5dddd34508a9cba3a337ae801c";";
       var contractAddress = "0xD614a73f2A5e18A74B70F8a1d1c9E6881Fe7d04e, probably be the deployed contract address";
     var abi = "abi of deployed contract goes here";
       var privateKey = "Private Key goes here";
