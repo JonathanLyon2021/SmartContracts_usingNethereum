@@ -34,8 +34,59 @@ class Program {
     
   {
     var provider = ""https://goerli.infura.io/v3/08ca1c5dddd34508a9cba3a337ae801c";";
-      var contractAddress = "0xD614a73f2A5e18A74B70F8a1d1c9E6881Fe7d04e, probably be the deployed contract address";
-    var abi = "abi of deployed contract goes here";
+      var contractAddress = "0xe3836A461C0153A5Ea61eE794739e2b1d4763a1f";
+    var abi = [
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "newFact",
+				"type": "string"
+			}
+		],
+		"name": "add",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "count",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "getFact",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
       var privateKey = "Private Key goes here";
     
     ContractService contractService = new ContractService(provider, contractAddress, abi, privateKey);
